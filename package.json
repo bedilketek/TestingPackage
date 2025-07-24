@@ -1,6 +1,6 @@
 {
     "name": "com.romezos.testingpackage",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "displayName": "Testing Package",
     "description": "This is an example package",
     "unity": "2021.1",

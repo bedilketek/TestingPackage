@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestingPackage : MonoBehaviour
+namespace RomDev.TestingPackageSpace
 {
-    // Start is called before the first frame update
-    void Start()
+    public class TestingPackage : MonoBehaviour
     {
-        Debug.Log("Start");
-    }
+        // Start is called before the first frame update
+        void Start()
+        {
+            Debug.Log("Start");
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }
+

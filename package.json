@@ -11,10 +11,17 @@
     "dependencies": {
         "com.unity.textmeshpro": "3.0.4"
     },
-    
+
     "author": {
         "name": "RomDev",
         "email": "bedilketek@gmail.com",
         "url": "https://www.unity3d.com"
-    }
+    },
+    "samples": [
+        {
+            "displayName": "TestSample",
+            "description": "Contains test scene",
+            "path": "Samples/SampleTest1"
+        }
+    ]
 }

@@ -50,6 +50,7 @@ namespace RomDev.TestingPackageSpace
         }
         private static void OnPackageWillRemoved(PackageRegistrationEventArgs args)
         {
+            Debug.Log("Some package deleted");
             foreach(UnityEditor.PackageManager.PackageInfo packageInfo in args.removed)
             {
                 Debug.Log(packageInfo.name + " is deleted");

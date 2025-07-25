@@ -21,14 +21,19 @@ namespace RomDev.TestingPackageSpace
 
         static TestingPackage()
         {
+            SessionState.SetBool(SessionDefineCheck, true);
+            AddScriptingSymbols();
+            Debug.Log("Package : " + SelfPackageName + ", added");
+            Events.registeringPackages -= OnPackageWillRemoved;
+            Events.registeringPackages += OnPackageWillRemoved;
             if (!SessionState.GetBool(SessionDefineCheck, false))
             {
                 //Debug.Log("Session with name " + SessionDefineCheck + ", isn't exist");
-                SessionState.SetBool(SessionDefineCheck, true);
-                AddScriptingSymbols();
-                Debug.Log("Package : " + SelfPackageName + ", added");
-                Events.registeringPackages -= OnPackageWillRemoved;
-                Events.registeringPackages += OnPackageWillRemoved;
+                //SessionState.SetBool(SessionDefineCheck, true);
+                //AddScriptingSymbols();
+                //Debug.Log("Package : " + SelfPackageName + ", added");
+                //Events.registeringPackages -= OnPackageWillRemoved;
+                //Events.registeringPackages += OnPackageWillRemoved;
             }
             else
             {
